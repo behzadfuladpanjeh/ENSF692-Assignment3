@@ -20,4 +20,4 @@ It uses structured data stored in NumPy arrays, and allows users to request spec
 
 ## Sample Output
 
-![Sample Output]("Sample_output.png")             
+![Sample Output](Sample_output.png)             
