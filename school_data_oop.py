@@ -32,7 +32,10 @@ class SchoolData:
         print(f"Highest enrollment for a single grade: {int(np.nanmax(self.data))}")
         print(f"Lowest enrollment for a grade: {int(np.nanmin(self.data))}")
 
+
 class SchoolMapper:
+    """ Creates school code name mapping"""
+
     def __init__(self, csv_path):
         self.schools = self._load_school_mapping(csv_path)
 
@@ -77,6 +80,8 @@ class SchoolMapper:
         raise ValueError("School code not found in dataset.")
 
 class SchoolStats:
+    """Output statistics for the requested school."""
+    
     def __init__(self, school_data:SchoolData):
         self.data = school_data
     def print_school_stats(self, school_idx, school_name, school_code):
